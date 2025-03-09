@@ -1,6 +1,6 @@
-# essentia: Document-Retrieval-Augmented Generator
+# essentiCall: Document-Retrieval-Augmented Generator
 
-essentia is a Retrieval-Augmented Generation (RAG) application that enables users to query information from a collection of PDF documents. It leverages document loading, text chunking, embeddings, and a vector database to provide relevant answers to user queries using a language model.
+essentiCall is a Retrieval-Augmented Generation (RAG) application that enables users to query information from a collection of PDF documents. It leverages document loading, text chunking, embeddings, and a vector database to provide relevant answers to user queries using a language model.
 
 <div>
   <img src="./image.jpg" alt="Preview">
@@ -20,8 +20,8 @@ Ensure you have Python 3.8+ installed and the required dependencies.
 ### Setup
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-repo/essentia.git
-   cd essentia
+   git clone https://github.com/kanavgoyal898/essentiCall.git
+   cd essentiCall
    ```
 2. Install dependencies:
    ```sh
@@ -62,6 +62,21 @@ Modify `constants.py` to customize:
 Install all dependencies using:
 ```sh
 pip install -r requirements.txt
+```
+
+## Examples
+
+```sh
+QUESTION: What is physics?
+______________________
+ANSWER:
+Physics is the most fundamental and all-inclusive of the sciences, and has had a profound effect on all scientific development. It is the present-day equivalent of what used to be called "natural philosophy", from which most of our modern sciences arose.
+
+SOURCES:
+    - ../data/The Feynman Lectures on Physics, Vol. 1.pdf :: page: 76
+    - ../data/The Feynman Lectures on Physics, Vol. 1.pdf :: page: 50
+    - ../data/The Feynman Lectures on Physics, Vol. 1.pdf :: page: 67
+    - ../data/The Feynman Lectures on Physics, Vol. 1.pdf :: page: 81
 ```
 
 ## Contributing
