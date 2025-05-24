@@ -7,14 +7,18 @@ parameters = {
         'chunk_size': 4096,
         'chunk_overlap': 1024,
     },
+    'gemma3': {
+        'chunk_size': 4096,
+        'chunk_overlap': 1024,
+    }
 }
 
 EMB_MODEL_NAME = 'nomic-embed-text'
-LLM_MODEL_NAME = 'llama3'
+LLM_MODEL_NAME = 'gemma3'
 
 CHUNK_SIZE = parameters[EMB_MODEL_NAME]['chunk_size']
 CHUNK_OVERLAP = parameters[EMB_MODEL_NAME]['chunk_overlap']
-BATCH_SIZE = 16
+BATCH_SIZE = 64
 
 DATA_PATH = '../data/'
 CHROMA_PATH = f'../database/{EMB_MODEL_NAME}/'
